@@ -10,7 +10,7 @@ alias -- -="cd -"
 alias d="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias w="cd ~/Workspace"
+alias dw="cd ~/Workspace"
 alias g="git"
 alias h="history"
 alias j="jobs"
@@ -158,3 +158,32 @@ command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.e
 
 # Delete recursuve files or folders
 alias deleteSvnRecursive='find . -name ".svn" -type d -exec rm -rf "{}" \;'
+
+# XAMPP, PHP, drush
+alias pear='/Applications/XAMPP/xamppfiles/bin/pear'
+alias php='/Applications/XAMPP/xamppfiles/bin/php'
+alias drush='/Applications/XAMPP/xamppfiles/bin/drush'
+
+# Aliases for common drush commands that work in a global context.
+alias dru='drush'
+alias ddd='drush drupal-directory'
+alias dl='drush pm-download'
+alias ev='drush php-eval'
+alias sa='drush site-alias'
+alias lsa='drush site-alias --local'
+alias st='drush core-status'
+alias use='drush site-set'
+
+# Aliases for drush commands that work on the current drupal site
+alias cc='drush cache-clear'
+alias cca='drush cache-clear all'
+alias dis='drush pm-disable'
+alias en='drush pm-enable'
+alias pmi='drush pm-info'
+alias pml='drush pm-list'
+alias rf='drush pm-refresh'
+alias unin='drush pm-uninstall'
+alias up='drush pm-update'
+alias upc='drush pm-updatecode'
+alias updb='drush updatedb'
+alias q='drush sql-query'
