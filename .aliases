@@ -156,6 +156,9 @@ alias reload="exec $SHELL -l"
 # Faster npm for europeans
 command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.eu"
 
+# databox
+alias box='ssh databox'
+
 # Delete recursuve files or folders
 alias deleteSvnRecursive='find . -name ".svn" -type d -exec rm -rf "{}" \;'
 
