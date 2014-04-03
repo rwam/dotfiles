@@ -157,7 +157,7 @@ alias reload="exec $SHELL -l"
 command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.eu"
 
 # databox
-alias box='ssh databox'
+alias box='ssh rri@databox.kochan.de'
 
 # Delete recursuve files or folders
 alias deleteSvnRecursive='find . -name ".svn" -type d -exec rm -rf "{}" \;'
